@@ -2,18 +2,16 @@
 # date: 2019/12/25
 
 class Student:
+    __slots__ = ('_name', '_age')
 
     @property
-    def score(self):
-        return self._value
+    def name(self):
+        return self._name
 
-    @score.setter
-    def score(self, value):
-        self._value = value
+    @name.setter
+    def name(self, name):
+        self._name = name
 
 
 s = Student()
-
-s.score = 34
-
-print(s.score)
+s.name = 34
